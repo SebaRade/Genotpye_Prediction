@@ -21,7 +21,7 @@ Thus, I generated a binomial logistic regression model to predict the genotype o
 
 The next step was to train and evaluate the model. Since the dataset was fairly small and there was a chance of over-/underfitting, I decided not to randomly partition it into training and test datasets. I chose a k-fold cross validation approach included in the caret package instead.
 
-The trained model had an accuracy of 0.77 and a moderate Cohen’s kappa of 0.53. I then applied the final model to all animals and plotted their probabilities of being a WT or KO animal using the ggplot2 and scatterplot3d packages. Given a cutoff of p=0.5, the model accuracy was even 0.85.
+The trained model had an accuracy of 0.77 and a moderate Cohen’s kappa of 0.53. I then applied the final model to all animals and plotted their probabilities of being a WT or KO animal using the ggplot2 and scatterplot3d packages. Given a cutoff of *p*=0.5, the model accuracy was even 0.85.
 
 **Summary**
 One could say that a moderate Cohen’s kappa is not substantial or perfect and that an accuracy of 0.77/0.85 is not high. I find it still impressing given the small dataset of only 42 animals. More importantly, the animals show a different behaviour in the empty chamber. Given a certain velocity, number of sniffs and number of visits, knockout animals show a higher activty in the empty chamber compared to wildtype animals.
